@@ -26,7 +26,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('Web_Scrapper_Production_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG.VALUE') == 'True'
 
 ALLOWED_HOSTS = ['ourlist.herokuapp.com']
 
