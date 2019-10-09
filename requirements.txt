@@ -8,12 +8,15 @@ cffi==1.12.3
 chardet==3.0.4
 colorama==0.4.1
 cryptography==2.7
+dj-database-url==0.5.0
 Django==2.2.5
+django-heroku==0.3.1
 gunicorn==19.9.0
 idna==2.8
 isort==4.3.21
 lazy-object-proxy==1.4.2
 mccabe==0.6.1
+psycopg2==2.8.3
 pycodestyle==2.5.0
 pycparser==2.19
 pylint==2.3.1
@@ -26,6 +29,7 @@ soupsieve==1.9.3
 sqlparse==0.3.0
 typed-ast==1.4.0
 urllib3==1.24.2
+whitenoise==4.1.4
 win-inet-pton==1.1.0
 wincertstore==0.2
 wrapt==1.11.2
