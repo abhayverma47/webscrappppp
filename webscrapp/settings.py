@@ -21,12 +21,13 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'he@-f)p@v8wei09=w3e!h*j_#ztqwa(*yk^jp05ufql4y*o@xd'
+# SECRET_KEY = 'he@-f)p@v8wei09=w3e!h*j_#ztqwa(*yk^jp05ufql4y*o@xd'
+SECRET_KEY = os.environ.get('Web_Scrapper_Production_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ourlist.herokuapp.com']
 
 
 # Application definition
