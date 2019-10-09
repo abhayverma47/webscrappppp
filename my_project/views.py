@@ -27,10 +27,11 @@ def about(request):
 
 def new_search(request):
     search = request.POST.get('search')
-    if request.POST.get('auto') == "":
-        city = 'bangalore'
-    else:
-        city = request.POST.get('auto')
+    city = 'bangalore' if request.POST.get(
+        'auto') == "" else request.POST.get('auto')
+    #     city = 'bangalore'
+    # else:
+    #     city = request.POST.get('auto')
 
     models.Search.objects.create(search=search)
     final_url = BASE_CRAIGSLIST_URL.format(city, quote_plus(search))
